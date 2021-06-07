@@ -6,7 +6,7 @@
             {
                 id: 1, 
                 joined: '2000-12-02', 
-                name:'John', 
+                name:'Johna', 
                 city:'Chandler', 
                 orderTotal: 9.9956,
                 orders: [
@@ -77,6 +77,7 @@
                     return customers[i];
                 }
              }
+             return {}
             //return $http.get('/customers/' + customerId)
         }
 
