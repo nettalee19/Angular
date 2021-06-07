@@ -150,7 +150,7 @@
         $scope.sortBy = 'name';
         $scope.reverse = false;
         $scope.customers = [];
-        $scope.appSettings = appSettings;
+        // $scope.appSettings = appSettings;
 
         function init(){
             $scope.customers = customersFactory.getCustomers()
@@ -174,7 +174,7 @@
         
     };
     
-    CustomersController.$inject = ['$scope', 'customersFactory', 'appSettings'];
+    CustomersController.$inject = ['$scope', 'customersFactory'];
     //CustomersController.$inject = ['$scope', 'customersService'];
 
     angular.module('customersApp')
