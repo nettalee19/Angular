@@ -145,20 +145,21 @@
 
 (function() {
     
-    var CustomersController = function ($scope, $log, customersFactory, appSettings) {
+    var CustomersController = function ($scope, customersFactory, appSettings) {
         $scope.sortBy = 'name';
         $scope.reverse = false;
         $scope.customers = [];
         // $scope.appSettings = appSettings;
 
         function init(){
-             customersFactory.getCustomers()
-             .success(function(customers) {
-                $scope.customers = customers
-             })
-             .error(function(data, status,headers,config) {
-                $log.log(data.error + '' + status)
-             })
+            $scope.customers = customersFactory.getCustomers()
+            //  customersFactory.getCustomers()
+            //  .success(function(customers) {
+            //     $scope.customers = customers
+            //  })
+            //  .error(function(data, status,headers,config) {
+            //     $log.log(data.error + '' + status)
+            //  })
         }
 
         init()
@@ -170,7 +171,7 @@
         
     };
     
-    CustomersController.$inject = ['$scope', 'customersFactory', '$log'];
+    CustomersController.$inject = ['$scope', 'customersFactory'];
 
     angular.module('customersApp')
       .controller('CustomersController', CustomersController);
