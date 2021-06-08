@@ -1,5 +1,5 @@
 angular.module('customersApp').value('appSettings',{
-    title: 'Customers Application',
+    title: 'Shop till you drop',
     version:'1.0'
 })
 

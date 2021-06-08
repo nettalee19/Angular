@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/Style/animations.css">
 </head>
-<body>
+<body ng-app="myApp">
     <header>
         <nav class="navbar navbar-default">
             <ul class="nav navbar-nav">
@@ -22,8 +22,10 @@
     <main>
         <div ng-view class="slide-animation"></div>
     </main>
+
     
-   
+    
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
     <script src="app/app.js"></script>
     <script src="app/services/customersFactory.js"></script>
