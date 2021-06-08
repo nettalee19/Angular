@@ -94,3 +94,37 @@
   display: flex;
   flex-direction: column;
 }
+
+.itemImg{
+  width: 10rem;
+  height: 9rem;
+}
+
+.HomwpageLink{
+  margin-left: 1rem;
+}
+
+
+
+/* footer */
+/* .footerMenu{
+  display: flex;
+  
+} */
+.footer{
+  /* height: 8vh; */
+  background: var(--main-bg-color);
+  text-align: center;
+  
+}
+
+.footerMenu{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+}
+.footer li{
+  padding: 10rem;
+  font-size: 22px;
+}

@@ -25,6 +25,7 @@
 <div class="AllItems">
     <div ng-repeat="cust in customers" class="productBox">
        <div>
+        <img src="{{cust.img}}" class="itemImg" alt="">
         <p>{{ cust.category }}</p> 
         <p>{{ cust.name }}</p> 
         <p>{{ cust.orderTotal | currency }}</p> 
@@ -42,6 +43,12 @@
 </div>
 
 <br />
-<span>Total Items: {{ customers.length }}</span>
+<!-- <span>Total Items: {{ customers.length }}</span> -->
 <br /><br />
-<footer>Version: {{ appSettings.version }} </footer>
+<footer>
+    <ul class="footerMenu">
+        <li>Version: {{ appSettings.version }} </li>
+        <li>link</li>
+        <li>link</li>
+    </ul>
+</footer>
