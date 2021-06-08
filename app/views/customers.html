@@ -26,10 +26,11 @@
     <div ng-repeat="cust in customers" class="productBox">
        <div>
         <img src="{{cust.img}}" class="itemImg" alt="">
-        <p>{{ cust.category }}</p> 
-        <p>{{ cust.name }}</p> 
-        <p>{{ cust.orderTotal | currency }}</p> 
-        <p>{{ cust.joined | date }}</p>
+        <p class="itemCat">{{ cust.category }}</p> 
+        <h5>{{ cust.name }}</h5> 
+        <p>{{ cust.miniDes }}</p>
+        <!-- <p>{{ cust.joined | date }}</p> -->
+        <p>{{ cust.price | currency }}</p> 
            
        </div>
        <a href="#/orders/{{ cust.id }}" class="pageLink">View Item >> </a> 

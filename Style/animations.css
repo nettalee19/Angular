@@ -69,10 +69,11 @@
 .pageLink{
   text-decoration: none;
   transition: 0.2s linear all;
+  color: black;
 }
 
 .pageLink:hover{
-  color: grey;
+  color: rgb(175, 173, 173);
 }
 
 .mainHead{
@@ -87,7 +88,7 @@
 }
 
 .productBox{
-  border: black 1px solid;
+  /* border: black 1px solid; */
   width: 12.2rem;
   padding: 20px;
   margin: 20px ;
@@ -100,10 +101,28 @@
   height: 9rem;
 }
 
+.itemCat{
+  color: grey;
+  font-size: 14px;
+}
+
 .HomwpageLink{
   margin-left: 1rem;
 }
 
+.productPage{
+  display: flex;
+}
+
+.productPageImg{
+  width: 33rem;
+  height: 30rem;
+}
+
+.productInfo{
+  padding-top: 20px;
+  width: 45rem;
+}
 
 
 /* footer */

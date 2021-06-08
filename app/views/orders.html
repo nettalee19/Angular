@@ -1,5 +1,20 @@
-<h2>{{ customer.name }}'s Orders</h2>
-<table class="table table-striped">
+<div class="productPage">
+    <div >
+        <img src="{{customer.img}}" alt="" class="productPageImg">
+    </div>
+    <div class="productInfo">
+        <p>{{ customer.category }}</p>
+        <h2>{{ customer.name }}</h2>
+        <p>{{ customer.miniDes }}</p>
+        <p>{{ customer.description }}</p>
+        <h5>{{ customer.price | currency }}</h5>
+        <!-- <p ng-repeat="size in customer">{{ customer.size }}</p> -->
+    
+    </div>
+
+</div>
+
+<!-- <table class="table table-striped">
     <tr>
         <th>Product</th>
         <th>Total</th>
@@ -12,4 +27,16 @@
         <td> &nbsp; </td>
         <td>{{ ordersTotal | currency }}</td>
     </tr>
-</table>
+</table> -->
+
+<!-- <div ng-repeat="order in customer.orders">
+    <td>{{ order.product }}</td>
+    <td>{{ order.total | currency }}</td>
+
+    <div>
+        <img src="{{order.img}}" class="itemImg" alt="">
+        <p class="itemCat">{{order.product}}</p> 
+        <p>{{ order.price | currency }}</p> 
+           
+    </div>
+</div> -->
