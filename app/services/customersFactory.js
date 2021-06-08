@@ -9,6 +9,7 @@
                 name:'Johna', 
                 city:'Chandler', 
                 orderTotal: 9.9956,
+                category:'cloth',
                 orders: [
                     {
                         id: 1,
@@ -23,6 +24,7 @@
                 name:'Zed', 
                 city:'Las Vegas', 
                 orderTotal: 19.99,
+                category:'cloth',
                 orders: [
                     {
                         id: 2,
@@ -42,6 +44,7 @@
                 name:'Tina', 
                 city:'New York', 
                 orderTotal:44.99,
+                category:'cloth',
                 orders: [
                     {
                         id: 4,
@@ -56,6 +59,7 @@
                 name:'Dave', 
                 city:'Seattle', 
                 orderTotal:101.50,
+                category:'cloth',
                 orders: [
                     {
                         id: 5,
@@ -63,7 +67,22 @@
                         total: 101.50
                     }
                 ]
-            }
+            },
+            {
+                id: 5, 
+                joined: '1995-03-28',
+                name:'Dave', 
+                city:'Seattle', 
+                orderTotal:101.50,
+                category:'cloth',
+                orders: [
+                    {
+                        id: 5,
+                        product: 'Kindle',
+                        total: 101.50
+                    }
+                ]
+            },
         ];
         var factory = {}
         factory.getCustomers = function(){

@@ -66,13 +66,24 @@
 }
 
 
+.pageLink{
+  text-decoration: none;
+  transition: 0.2s linear all;
+}
+
+.pageLink:hover{
+  color: grey;
+}
+
 .mainHead{
   text-align: center;
 }
 
 .AllItems{
+  margin-left: 6rem;
   display: grid;
   grid-template-columns: 20rem 20rem 20rem 20rem;
+  text-align: center;
 }
 
 .productBox{
