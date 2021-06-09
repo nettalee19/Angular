@@ -1,4 +1,3 @@
-
 // //option 1
 // // app.controller('CustomersController', 
 // // function CustomersController($scope){

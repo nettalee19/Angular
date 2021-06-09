@@ -17,7 +17,7 @@
 
 (function() {
     
-    var app = angular.module('customersApp', ['ngRoute', 'ngAnimate']);
+    var app = angular.module('customersApp', ['ngRoute']);
     
     app.config(function($routeProvider) {
         $routeProvider
