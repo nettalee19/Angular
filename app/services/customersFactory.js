@@ -1,7 +1,7 @@
 (function(){
 
-    //var customerFactory = function($http){
     var customerFactory = function(){
+        
         var customers = [
             {
                 id: 1, 
@@ -88,7 +88,7 @@
                 name:'Skirt', 
                 miniDes:'Rainbow skirt',
                 description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum labore aspernatur perferendis dolores doloremque accusamus molestiae laudantium minus quaerat id!", 
-                price:34.90,
+                price:101.50,
                 category:'skirts',
                 img:"https://myer-media.com.au/wcsstore/MyerCatalogAssetStore/images/30/301/8187/101/5/774140410/774140410_1_720x928.jpg",
                 

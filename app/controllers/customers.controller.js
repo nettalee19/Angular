@@ -154,6 +154,14 @@
 
         function init(){
             $scope.customers = customersFactory.getCustomers()
+            
+            // customersFactory.getCustomers()
+            //     .then(function(response) {
+            //         $scope.customers = response.data;
+            //     }, function(data, status, headers, config) {
+            //         $log.log(data.error + ' ' + status);
+            //     });
+            
             //$scope.customers = customersService.getCustomers()
             
             //  customersFactory.getCustomers()
