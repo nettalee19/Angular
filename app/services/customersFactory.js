@@ -141,6 +141,7 @@
         factory.getCustomers = function(){
             return customers
             //return $http.get('/customers')
+            return $http.get('http://127.0.0.1:5500/data/data.json')
         }
 
         factory.getCustomer = function(customerId){
