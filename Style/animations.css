@@ -65,6 +65,14 @@
   opacity:1;
 }
 
+.navbar{
+  background: rgb(219, 136, 192);
+}
+
+main{
+  margin-top: 20px;
+}
+
 
 .pageLink{
   text-decoration: none;
