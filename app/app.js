@@ -33,6 +33,21 @@
                 controller: 'OrdersController',
                 templateUrl: 'app/views/orders.html'
             })
+            .when('/login', {
+                controller: 'loginController',
+                templateUrl: 'app/views/login.html',
+                controllerAs: 'vm'
+            })
+            .when('/register', {
+                controller: 'registerController',
+                templateUrl: 'app/views/register.html',
+                controllerAs: 'vm'
+            })
+            .when('/favorites', {
+                controller: 'favoritesController',
+                templateUrl: 'app/views/favorites.html',
+                controllerAs: 'vm'
+            })
             .otherwise( { redirectTo: '/' } );
     });
     

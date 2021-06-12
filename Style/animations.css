@@ -69,10 +69,26 @@
   background: rgb(219, 136, 192);
 }
 
+.logReg{
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+}
+
 main{
   margin-top: 20px;
 }
 
+
+.HomwpageLink{
+  text-decoration: none;
+  transition: 0.2s linear all;
+  color: black;
+}
+
+.HomwpageLink:hover{
+  color: rgb(48, 88, 139);
+}
 
 .pageLink{
   text-decoration: none;
@@ -131,6 +147,25 @@ main{
   padding-top: 20px;
   width: 45rem;
 }
+
+.loginForm,
+.registerForm{
+  margin-left: 10rem;
+  padding: 20px;
+}
+
+.form-group,
+.form-actions{
+  padding-top: 20px;
+}
+
+.help-block{
+  font-size: 12px;
+}
+
+
+
+
 
 
 /* footer */
