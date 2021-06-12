@@ -165,7 +165,10 @@ main{
 
 
 
-
+.favBtn{
+  color: red;
+  text-decoration: none;
+}
 
 
 /* footer */

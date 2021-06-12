@@ -149,10 +149,12 @@
         $scope.sortBy = 'name';
         $scope.reverse = false;
         $scope.customers = [];
+        $scope.favorites = [];
         $scope.appSettings = appSettings;
 
         function init(){
             $scope.customers = customersFactory.getCustomers()
+            $scope.favorites = customersFactory.addFav()
             
             // customersFactory.getCustomers()
             //     .then(function(response) {

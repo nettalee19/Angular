@@ -153,6 +153,17 @@
              return {}
             //return $http.get('/customers/' + customerId)
         }
+        factory.addFav = function(customerId){
+            for (var i=0,len=customers.length;i<len;i++) {
+                if (customers[i].id === parseInt(customerId)) {
+                    favorites.push(customers[i])
+                    console.log(favorites)
+                    return customers[i];
+                }
+             }
+             return {}
+            //return $http.get('/customers/' + customerId)
+        }
 
         return factory
     }
