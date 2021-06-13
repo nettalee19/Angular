@@ -301,7 +301,7 @@
  
 				$scope.add_cart = function(product){ //set a function name add_cart
 					if(product){ //check if the product is already declared within the function
-						$scope.carts.push({name: product.name, price: product.price}); //pushes the chosen product into a new variable called carts when the add to cart button is clicked
+						$scope.carts.push({name: product.name, price: product.price, category:product.category, img:product.img, miniDes:product.miniDes, }); //pushes the chosen product into a new variable called carts when the add to cart button is clicked
 						// $scope.carts.push({p_id: product.p_id, p_name: product.p_name, p_price: product.p_price}); //pushes the chosen product into a new variable called carts when the add to cart button is clicked
 					}	
 				}
