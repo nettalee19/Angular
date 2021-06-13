@@ -44,32 +44,13 @@
             </div>
         </div>
     </div>
-    <div class = "pull-right col-md-5">
+    <div>
         <div class = "panel panel-primary">
             <div class = "panel-heading">
                 <h5>My Favorites</h5>
             </div>
             <div class = "panel-body table-responsive">
-                <table class = "table">
-                    <thead>
-                        <tr>
-                            <th>Product</th>
-                            <th>Price</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr ng-repeat = "cart in carts" ng-init = "setTotals(cart)">
-                            <td>{{cart.name}}</td>
-                            <td>{{cart.price | currency}}</td>
-                            <td><button type = "button" ng-click = "remove_cart(cart)" class = "btn btn-danger"><span class = "glyphicon glyphicon-remove"></span></button></td>
-                        </tr>
-                        <tr>
-                            <td align = "right">Total</td>
-                            <!-- <td>₱{{total}}</td> -->
-                        </tr>
-                    </tbody>
-                </table>
+                
                 
                 <div id = "product" class="AllItems">
                     <div id = "p_list" ng-repeat = "cart in carts " class="productBox">
@@ -79,8 +60,8 @@
                         <h5>{{cart.name}}</h5>
                         <p>{{ cart.miniDes }}</p>
                         <p>{{ cart.price | currency }}</p> 
-                        <a href="#/orders/{{ product.id }}" class="pageLink">View Item >> </a> 
-
+                        <!-- <a href="#/orders/{{ product.id }}" class="pageLink">View Item >> </a>  -->
+                        </div></div>
             </div>
         </div>
     </div>
