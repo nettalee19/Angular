@@ -3,41 +3,83 @@
 <h2 class="mainHead"> {{ appSettings.title }} </h2>
 <!-- Filter: <input type="text" ng-model="customerFilter.name" class="repeat-animation" /> -->
 <br /><br />
-
-<!-- <div class="AllItems">
+<!-- <table class="table table-striped">
+    <tr>
+        <th ng-click="doSort('name')">Name</th>
+        <th ng-click="doSort('city')">City</th>
+        <th ng-click="doSort('orderTotal')">Order Total</th>
+        <th ng-click="doSort('joined')">Joined</th>
+        <th>Orders</th>
+        <th>&nbsp;</th>
+    </tr>
+    
+    <tr ng-repeat="cust in customers | filter:customerFilter | orderBy:sortBy:reverse">
+        <td>{{ cust.category }}</td>
+        <td>{{ cust.name }}</td>
+        <td>{{ cust.orderTotal | currency }}</td>
+        <td>{{ cust.joined | date }}</td>
+        <td><a href="#/orders/{{ cust.id }}">View Item >> </a></td>
+        <td class="center"><span class="glyphicon glyphicon-remove delete" ng-click="deleteCustomer(cust.id)">X</span></td>
+    </tr>
+</table> -->
+<div class="AllItems">
     <div ng-repeat="cust in customers" class="productBox">
        <div>
         <img src="{{cust.img}}" class="itemImg" alt="">
         <p class="itemCat">{{ cust.category }}</p> 
         <h5>{{ cust.name }}</h5> 
         <p>{{ cust.miniDes }}</p>
+        <!-- <p>{{ cust.joined | date }}</p> -->
         <p>{{ cust.price | currency }}</p> 
            
        </div>
        <a href="#/orders/{{ cust.id }}" class="pageLink">View Item >> </a> 
+       <!-- <a href="#/orders/{{ cust.id }}" class="pageLink favBtn"> add to favs </a>  -->
        <button class="btn-primary" ng-click = "add_cart(product)">Add to Favorites</button></td>
        <button type = "button" ng-click = "add_cart(product)"><span class = "glyphicon glyphicon-shopping-cart"></span> Add to cart</button>
-
+       <!-- <button class="btn-primary" ng-click="addFav(item)">Add to Favorites</button></td> -->
+       <!-- <p>{{ cust.category }}</p> 
+       <p>{{ cust.name }}</p> 
+       <p>{{ cust.orderTotal | currency }}</p> 
+       <p>{{ cust.joined | date }}</p> 
+       <p><a href="#/orders/{{ cust.id }}">View Item >> </a></p>  -->
     </div>
 
+</div>
+
+<!-- <div>
+    <h2>Favorites:</h2>
+    <div ng-repeat="cust in customers" class="productBox">
+        <div>
+         <img src="{{cust.img}}" class="itemImg" alt="">
+         <p class="itemCat">{{ cust.category }}</p> 
+         <h5>{{ cust.name }}</h5> 
+         <p>{{ cust.miniDes }}</p>
+         <p>{{ cust.price | currency }}</p> 
+            
+        </div>
+        <a href="#/orders/{{ cust.id }}" class="pageLink">View Item >> </a> 
+        
+     </div>
 </div> -->
 
+<br />
+<!-- <span>Total Items: {{ customers.length }}</span> -->
+<br /><br />
 
-<div >
-    
-    <div id = "bg-background" class = " col-md-7">
-        <!-- <h4>PRODUCTS<h4> -->
-        <!-- <hr style = "border-top:1px groovy #ccc;"> -->
-        <div id = "product" class="AllItems">
-            <div id = "p_list" ng-repeat = "product in products " class="productBox">
+
+
+<div class = "col-md-2"></div>
+<div class = "col-md-8 well">
+    <!-- <h3 class = "text-primary">Simple Shopping Cart Application Using AngularJs</h3> -->
+    <hr style = "border-top:1px dotted #ccc;"/>
+    <div id = "bg-background" class = "col-md-7">
+        <h4>PRODUCTS<h4>
+        <hr style = "border-top:1px groovy #ccc;">
+        <div id = "product">
+            <div id = "p_list" ng-repeat = "product in products ">
             <!-- <div id = "p_list" ng-repeat = "product in products "> -->
-                <img src="{{product.img}}" class="itemImg" alt="">
-                <p class="itemCat">{{ product.category }}</p> 
                 <h5>{{product.name}}</h5>
-                <p>{{ product.miniDes }}</p>
-                <p>{{ product.price | currency }}</p> 
-                <a href="#/orders/{{ product.id }}" class="pageLink">View Item >> </a> 
-
                 <center><img ng-src = "{{product.p_image}}"/></center>
                 <!-- <div><label>Price: ₱{{product.p_price}}</label></div> -->
                 <center><button type = "button" ng-click = "add_cart(product)"><span class = "glyphicon glyphicon-shopping-cart"></span> Add to cart</button></center>
