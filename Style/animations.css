@@ -166,9 +166,26 @@ main{
 
 
 .favBtn{
-  color: red;
+  color: rgb(114, 9, 9);
   text-decoration: none;
+  border: none;
+  background: rgb(107, 204, 107);
+  transition: 0.2s linear all;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 5px;
 }
+.favBtn:hover{
+  background: rgb(84, 161, 84);
+}
+
+.myFavHead{
+  margin-left: 9rem;
+}
+
+/* .myFavorites{
+  background: rgba(219, 136, 191, 0.068);
+} */
 
 
 /* footer */

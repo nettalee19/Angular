@@ -309,18 +309,18 @@
  
 				$scope.total = 0; //display the default value of total
  
-				// $scope.setTotals = function(cart){ //set a function name setTotals 
-				// 	if(cart){ //check if cart is already set in the function
-				// 		$scope.total += cart.price; //sum the total value of each product
-				// 	}
-				// }
+				$scope.setTotals = function(cart){ //set a function name setTotals 
+					if(cart){ //check if cart is already set in the function
+						$scope.total += cart.price; //sum the total value of each product
+					}
+				}
  
-				// $scope.remove_cart = function(cart){ //set a function called remove_cart
-				// 	if(cart){ //checked if the cart has a value
-				// 		$scope.carts.splice($scope.carts.indexOf(cart), 1); //delete a product based on the index 
-				// 		$scope.total -= cart.p_price; //deduct the price of the product  simultaneously when deleted
-				// 	}
-				// }
+				$scope.remove_cart = function(cart){ //set a function called remove_cart
+					if(cart){ //checked if the cart has a value
+						$scope.carts.splice($scope.carts.indexOf(cart), 1); //delete a product based on the index 
+						$scope.total -= cart.p_price; //deduct the price of the product  simultaneously when deleted
+					}
+				}
 
         function init(){
             $scope.customers = customersFactory.getCustomers()
