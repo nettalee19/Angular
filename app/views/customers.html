@@ -47,7 +47,7 @@
 
 </div>
 
-<div>
+<!-- <div>
     <h2>Favorites:</h2>
     <div ng-repeat="cust in customers" class="productBox">
         <div>
@@ -61,36 +61,26 @@
         <a href="#/orders/{{ cust.id }}" class="pageLink">View Item >> </a> 
         
      </div>
-</div>
+</div> -->
 
 <br />
 <!-- <span>Total Items: {{ customers.length }}</span> -->
 <br /><br />
-<!-- <footer>
-    <ul class="footerMenu">
-        <li>Version: {{ appSettings.version }} </li>
-        <li>link</li>
-        <li>link</li>
-    </ul>
-</footer> -->
 
-<nav class = "navbar navbar-default">
-    <div class = "container-fluid">
-        <a class = "navbar-brand" href = "https://sourcecodester.com">Sourcecodester</a>
-    </div>
-</nav>
+
+
 <div class = "col-md-2"></div>
 <div class = "col-md-8 well">
-    <h3 class = "text-primary">Simple Shopping Cart Application Using AngularJs</h3>
+    <!-- <h3 class = "text-primary">Simple Shopping Cart Application Using AngularJs</h3> -->
     <hr style = "border-top:1px dotted #ccc;"/>
     <div id = "bg-background" class = "col-md-7">
         <h4>PRODUCTS<h4>
         <hr style = "border-top:1px groovy #ccc;">
         <div id = "product">
             <div id = "p_list" ng-repeat = "product in products ">
-                <h5>{{product.p_name}}</h5>
+                <h5>{{product.name}}</h5>
                 <center><img ng-src = "{{product.p_image}}"/></center>
-                <div><label>Price: ₱{{product.p_price}}</label></div>
+                <!-- <div><label>Price: ₱{{product.p_price}}</label></div> -->
                 <center><button type = "button" ng-click = "add_cart(product)"><span class = "glyphicon glyphicon-shopping-cart"></span> Add to cart</button></center>
             </div>
         </div>
@@ -98,7 +88,7 @@
     <div class = "pull-right col-md-5">
         <div class = "panel panel-primary">
             <div class = "panel-heading">
-                <h5>MY CART</h5>
+                <h5>My Favorites</h5>
             </div>
             <div class = "panel-body table-responsive">
                 <table class = "table">
@@ -124,4 +114,4 @@
             </div>
         </div>
     </div>
-</div
+</div>
